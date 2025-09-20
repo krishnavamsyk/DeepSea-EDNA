@@ -10,7 +10,7 @@ const Home = () => {
       <section className="relative py-20 px-4">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl font-bold text-foreground mb-6">
-            Deep Sea <span className="text-primary">eDNA</span> Analysis
+            Marine Edge <span className="text-primary">eDNA</span> Analysis
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Unlock the mysteries of deep ocean biodiversity through AI-powered environmental DNA analysis. 

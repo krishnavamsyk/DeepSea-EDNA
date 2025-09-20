@@ -5,20 +5,30 @@ import { Waves, Users, Brain, Microscope, Globe, Award } from "lucide-react";
 const About = () => {
   const teamMembers = [
     {
-      name: "Dr. Marine Researcher",
-      role: "Principal Investigator",
-      expertise: "Deep Sea Ecology, eDNA Metabarcoding"
+      name: "M Jai Ram Chandra",
+      role: "Project Lead"
     },
     {
-      name: "Dr. Computational Biologist", 
-      role: "AI/ML Lead",
-      expertise: "Machine Learning, Bioinformatics"
+      name: "Vignesh Thangabalan", 
+      role: "AI/ML Lead"
     },
     {
-      name: "Dr. Taxonomic Expert",
-      role: "Species Identification",
-      expertise: "Marine Taxonomy, Systematics"
+      name: "A Sampath Dev ",
+      role: "AI/ML Lead"
+    },
+    {
+      name: "Krishna Vamsy K",
+      role: "Web-tech and AI/ML Lead"
+    },
+    {
+      name: "Atul Kumar Jaiswal",
+      role: "Web-tech Lead"
+    },
+    {
+      name: "M Varshini ",
+      role: "UI/UX Lead"
     }
+
   ];
 
   const technologies = [
@@ -138,54 +148,14 @@ const About = () => {
           </Card>
         </section>
 
-        {/* Research Partners */}
-        <section className="mb-12">
-          <Card className="shadow-ocean">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-2xl">
-                <Award className="h-8 w-8 text-data-warning" />
-                Research Partners
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">Ministry of Earth Sciences (MoES)</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Leading India's earth system science research initiatives, MoES provides strategic oversight 
-                    and funding for deep ocean exploration projects.
-                  </p>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li>• Deep Ocean Mission support</li>
-                    <li>• Research vessel access</li>
-                    <li>• Scientific coordination</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">CSIR-National Institute of Oceanography (CSIR-NIO)</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Premier marine research institute providing expertise in oceanographic sciences 
-                    and deep-sea exploration technologies.
-                  </p>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li>• Marine biology expertise</li>
-                    <li>• Sample collection protocols</li>
-                    <li>• Laboratory facilities</li>
-                  </ul>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
+        
         {/* Research Team */}
         <section>
           <Card className="shadow-ocean">
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-2xl">
                 <Users className="h-8 w-8 text-data-positive" />
-                Research Team
+                Our Team
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -197,7 +167,6 @@ const About = () => {
                     </div>
                     <h3 className="font-bold text-foreground mb-1">{member.name}</h3>
                     <p className="text-sm text-primary font-medium mb-2">{member.role}</p>
-                    <p className="text-xs text-muted-foreground">{member.expertise}</p>
                   </div>
                 ))}
               </div>
