@@ -1,73 +1,31 @@
-# Welcome to your Lovable project
+# DeepSea-EDNA: An AI-Driven eDNA Analysis for Deep-Sea Biodiversity
+### Introduction
+This project develops an AI-driven pipeline to analyze deep-sea eDNA, overcoming the limitations of traditional methods that rely on incomplete reference databases. Our solution uses deep learning and unsupervised learning to accurately classify, annotate, and estimate the abundance of eukaryotic taxa, including undiscovered species, directly from raw eDNA sequences. We are also creating a specialized website for public access to the data and tools.
 
-## Project info
+### Problem Statement
+The primary challenge in deep-sea eDNA analysis is the lack of comprehensive deep-sea organism sequences in existing reference databases. This leads to misclassifications and an underestimation of biodiversity. Traditional bioinformatic pipelines are inadequate for discovering novel species, hindering accurate biodiversity assessments essential for conservation.
 
-**URL**: https://lovable.dev/projects/3bb1cbe5-8453-4084-9586-2b762783428e
+### Proposed Solution
+Our pipeline offers a novel approach to address these issues:
 
-## How can I edit this code?
+-> Database-Independent Classification: Deep learning models are trained to identify and classify eukaryotic taxa without relying on complete reference databases.
 
-There are several ways of editing your application.
+-> Discovery of Novel Taxa: Unsupervised learning is used to cluster sequences, enabling the identification of new or unclassified species.
 
-**Use Lovable**
+-> Efficient Workflow: The pipeline is designed to be computationally efficient, reducing the time required to process large eDNA datasets.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3bb1cbe5-8453-4084-9586-2b762783428e) and start prompting.
+-> Biodiversity Assessment: The solution provides detailed information on species richness and community structure, offering insights for conservation.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Features
+-> AI-driven analysis for improved accuracy.
 
-**Use your preferred IDE**
+-> Unsupervised clustering to discover novel taxa.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+-> Efficient abundance estimation.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+-> Optimized computational workflow.
 
-Follow these steps:
+-> Dedicated website for public data and tool access.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3bb1cbe5-8453-4084-9586-2b762783428e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Dataset
+The project will use public datasets from the NCBI BLAST database (https://ftp.ncbi.nlm.nih.gov/blast/db/), supplemented with deep-sea eDNA data from CMLRE
