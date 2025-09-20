@@ -1,4 +1,4 @@
-# Project: DeepSea-EDNA: An AI-Driven eDNA Analysis for Deep-Sea Biodiversity
+# DeepSea-EDNA: An AI-Driven eDNA Analysis for Deep-Sea Biodiversity
 ### Introduction
 This project develops an AI-driven pipeline to analyze deep-sea eDNA, overcoming the limitations of traditional methods that rely on incomplete reference databases. Our solution uses deep learning and unsupervised learning to accurately classify, annotate, and estimate the abundance of eukaryotic taxa, including undiscovered species, directly from raw eDNA sequences. We are also creating a specialized website for public access to the data and tools.
 
