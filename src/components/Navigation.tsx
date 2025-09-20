@@ -22,17 +22,16 @@ const Navigation = () => {
               <p className="text-sm text-white/80">Biodiversity Analysis Platform</p>
             </div>
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    isActive
-                      ? "bg-white/20 text-white"
-                      : "text-white/80 hover:text-white hover:bg-white/10"
+                  `px-4 py-2 rounded-lg text-sm font-medium transition-colors ${isActive
+                    ? "bg-white/20 text-white"
+                    : "text-white/80 hover:text-white hover:bg-white/10"
                   }`
                 }
               >
@@ -40,10 +39,10 @@ const Navigation = () => {
               </NavLink>
             ))}
           </div>
-          
-          <Button 
-            variant="outline" 
-            size="sm" 
+
+          <Button
+            variant="outline"
+            size="sm"
             className="md:hidden bg-white/10 border-white/20 text-white hover:bg-white/20"
           >
             Menu
